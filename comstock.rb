@@ -2,9 +2,9 @@ require "formula"
 
 class Comstock < Formula
   homepage "http://comstock.herokuapp.com"
-  version '0.1.6'
-  url "https://github.com/shinpei/comstock/releases/download/0.1.6/comstock_0.1.6_darwin_amd64.zip"
-  sha1 "58ed7dade4c29fd5f99993ecaf4bdec3b47effd6"
+  version '0.1.7'
+  url "https://github.com/shinpei/comstock/releases/download/0.1.7/comstock_0.1.7_darwin_amd64.zip"
+  sha1 "770535cef7146b9b91dc4642919171941d3ecf8b"
 
   def install
     bin.install 'comstock-cli'
