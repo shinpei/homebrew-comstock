@@ -8,7 +8,7 @@ class Comstock < Formula
 
   def install
     bin.install 'comstock-cli'
-    system 'install', 'comstock'
-    system 'install', 'coms_save_previous'
+    bin.write_exec_script 'comstock'
+    bin.write_exec_script 'coms_save_previous'
   end
 end
