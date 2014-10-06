@@ -5,11 +5,11 @@ class Comstock < Formula
   version '0.1.8'
   url "https://github.com/shinpei/comstock/releases/download/0.1.8/comstock_0.1.8_darwin_amd64.zip"
   sha1 "2552672cef76c375828c2d243a4a01c31cef9954"
-
+  skip_clean 'comstock', 'coms_save_previous'
   def install
     bin.install 'comstock-cli'
-    bin.write_exec_script 'comstock'
-    bin.write_exec_script 'coms_save_previous'
+    bin.install 'comstock'
+    bin.install 'coms_save_previous'
     ##bin.install 'coms_save_previous'
   end
 end
